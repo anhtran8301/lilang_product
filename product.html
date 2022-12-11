@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
+    <link href="https://fonts.cdnfonts.com/css/svn-gotham" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/side-bar.css">
+    <link rel="stylesheet" href="./style/news.css">
+    <title>Document</title>
+</head>
+<style>
+    .owl-dots {
+        display: none;
+    }
+</style>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <form action="" class="search">
+            <input type="text" class="searchTerm" placeholder="Tìm kiếm nào!">
+            <button type="submit" class="searchButton">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <li><a href="#" style="color: #273773;">TRANG CHỦ</a></li>
+        <li><a href="#">GIỚI THIỆU </a></li>
+        <li>
+            <a href="#" class="" id="toggle" onclick="showMenu()">SẢN PHẨM <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="product-side-bar" id="third">
+                <a href="#">Bộ sưu tập vải polo</a>
+                <a href="#">Bộ sưu tập vải thể thao</a>
+                <a href="#">Bộ sưu tập vải polo sọc</a>
+                <a href="#">Bộ sưu tập vải yoga</a>
+                <a href="#">Bộ sưu tập vải jean</a>
+                <a href="#">Bộ sưu tập vải áo khoác</a>
+                <a href="#">Bộ sưu tập vải kaki</a>
+                <a href="#">Bộ sưu tập vải đồ lót</a>
+                <a href="#">Bộ sưu tập vải vest</a>
+                <a href="#">Bộ sưu tập vải công nghệ</a>
+            </div>
+        </li>
+        <li><a href="#">TIN TỨC</a></li>
+        <li><a href="#">TUYỂN DỤNG</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+    </div>
+    <div class="">
+        <div class="contact_header">
+            <i class="fa-solid fa-phone"></i><span class="hotline">&nbsp;&nbsp;&nbsp;Hotline: </span><span
+                class="Phone-num">&nbsp;&nbsp;(012) 234 245
+                - (012) 234 245 -
+                (012) 234 245</span>
+        </div>
+        <div class="nav">
+            <div class="menu-part-left">
+                <div class="Icon-menu"><i class="fa-solid fa-bars" onclick="openNav()"></i></div>
+                <div class="logo">
+                    <img src="./image/Logo Liliang.png" alt="">
+                </div>
+                <div class="nav-element">
+                    <ul>
+                        <li><a href="#" style="color: #273773;">TRANG CHỦ</a></li>
+                        <li><a href="#">GIỚI THIỆU </a></li>
+                        <li class="dropdown" style=" position: relative;
+                        display: inline-block;">
+                            <a href="#" class="product-menu">SẢN PHẨM <i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#">Bộ sưu tập vải polo</a>
+                                <a href="#">Bộ sưu tập vải thể thao</a>
+                                <a href="#">Bộ sưu tập vải polo sọc</a>
+                                <a href="#">Bộ sưu tập vải yoga</a>
+                                <a href="#">Bộ sưu tập vải jean</a>
+                                <a href="#">Bộ sưu tập vải áo khoác</a>
+                                <a href="#">Bộ sưu tập vải kaki</a>
+                                <a href="#">Bộ sưu tập vải đồ lót</a>
+                                <a href="#">Bộ sưu tập vải vest</a>
+                                <a href="#">Bộ sưu tập vải công nghệ</a>
+                            </div>
+                        </li>
+                        <li><a href="#">TIN TỨC</a></li>
+                        <li><a href="#">TUYỂN DỤNG</a></li>
+                        <li><a href="#">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menu-part-right">
+                <form action="" class="search">
+                    <input type="text" class="searchTerm" placeholder="Tìm kiếm nào!">
+                    <button type="submit" class="searchButton">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <div><img src="./image/icon/united-kingdom.png" alt=""></div>
+                <div><img src="./image/icon/china.png" alt=""></div>
+                <div><img src="./image/icon/vietnam.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="collection-container row">
+            <div class="col-lg-6 col-sm-6 col-6">
+
+                <img class="collection-image" src="./image/product/collection/garmentfabric 1.png" alt="">
+
+            </div>
+            <div class="col-lg-6 col-sm-6 col-6">
+                <h3 class="collection-til">bo suu tap vai</h3>
+                <button class="contact-btn">lien he ngay</button>
+                <div>
+                    <span>SKU: </span>
+                    <p>sss</p>
+                </div>
+                <div>
+                    <span>SKU: </span>
+                    <p>sss</p>
+                </div>
+                <div>
+                    <span>SKU: </span>
+                    <p>sss</p>
+                </div>
+                <p class="collection-info">
+                    Thông tin sản phẩm
+                </p>
+                <p class="collection-info-des">Trên thị trường có rất nhiều loại vải khác nhau, vải kaki rất thịnh hành
+                    trên thị trường và rất dễ gây nhầm lẫn cho người sử dụng. Vải kaki được phân loại thành 4 loại chính
+                    để phân biệt, bao gồm: vải kaki thun, vải kaki không thun, vải kaki polyester, vải kaki cotton.</p>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="gioi-thieu-ft">
+                <h1>Giới thiệu</h1>
+                <h2>CÔNG TY VẢI LI LIANG</h2>
+                <p>Số GPKD: 4118008503
+                    <br>Ngày cấp: 02/12/2020
+                    <br>Nơi cấp: Thành Phố Hồ Chí Minh
+                    <br>Địa chỉ trụ sở: Số 8 Phạm Phú Thứ,
+                    <br>Phường 11, Quận Tân Bình, Thành Phố Hồ Chí Minh
+                </p>
+            </div>
+            <div class="gioi-thieu-ft">
+                <h1>Thông tin liên hệ</h1>
+                <h2>Form liên hệ</h2>
+                <ul>
+                    <li><a href="#">Điện thoại: (012) 234 245 - (012) 234 245 - (012) 234 245</a></li>
+                    <li><a href="#">Giờ mở cửa: 08:00 - 18:00/a></li>
+                </ul>
+            </div>
+            <div class="gioi-thieu-ft">
+                <h1>Thông tin</h1>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="gioi-thieu-ft" style="flex: 15%;">
+                <h1 style="width: 247px;font-size: 1.49em">CÔNG TY VẢI LI LIANG</h1>
+                <div style="margin-top: 20%;"><img src="./image/footer/1.png" alt=""></div>
+            </div>
+        </footer>
+
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(".owl-prev span").html('<img class ="prev btnx" src="./image/next/Untitled.png" alt="" width="64px">');
+                $(".owl-next span").html('<img class ="next btnx" src="./image/next/Untitled.png" alt="" width="64px">');
+            });
+        </script>
+</body>
+
+<!-- <script src="./script/swiper.js"></script> -->
+<script src="./script/side-bar.js"></script>
+
+
+</html>

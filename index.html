@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
+    <link href="https://fonts.cdnfonts.com/css/svn-gotham" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/side-bar.css">
+
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .owl-dots {
+        display: none;
+    }
+</style>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <form action="" class="search">
+            <input type="text" class="searchTerm" placeholder="Tìm kiếm nào!">
+            <button type="submit" class="searchButton">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <li><a href="#" style="color: #273773;">TRANG CHỦ</a></li>
+        <li><a href="#">GIỚI THIỆU </a></li>
+        <li>
+            <a href="#" class="" id="toggle" onclick="showMenu()">SẢN PHẨM <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="product-side-bar" id="third">
+                <a href="#">Bộ sưu tập vải polo</a>
+                <a href="#">Bộ sưu tập vải thể thao</a>
+                <a href="#">Bộ sưu tập vải polo sọc</a>
+                <a href="#">Bộ sưu tập vải yoga</a>
+                <a href="#">Bộ sưu tập vải jean</a>
+                <a href="#">Bộ sưu tập vải áo khoác</a>
+                <a href="#">Bộ sưu tập vải kaki</a>
+                <a href="#">Bộ sưu tập vải đồ lót</a>
+                <a href="#">Bộ sưu tập vải vest</a>
+                <a href="#">Bộ sưu tập vải công nghệ</a>
+            </div>
+        </li>
+        <li><a href="#">TIN TỨC</a></li>
+        <li><a href="#">TUYỂN DỤNG</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+    </div>
+    <div class="container">
+        <div class="contact_header">
+            <i class="fa-solid fa-phone"></i><span class="hotline">&nbsp;&nbsp;&nbsp;Hotline: </span><span
+                class="Phone-num">&nbsp;&nbsp;(012) 234 245
+                - (012) 234 245 -
+                (012) 234 245</span>
+        </div>
+        <div class="nav">
+
+            <div class="menu-part-left">
+                <div class="Icon-menu"><i class="fa-solid fa-bars" onclick="openNav()"></i></div>
+                <div class="logo">
+                    <img src="./image/Logo Liliang.png" alt="">
+                </div>
+                <div class="nav-element">
+                    <ul>
+                        <li><a href="#" style="color: #273773;">TRANG CHỦ</a></li>
+                        <li><a href="#">GIỚI THIỆU </a></li>
+                        <li class="dropdown" style=" position: relative;
+                        display: inline-block;">
+                            <a href="#" class="product-menu">SẢN PHẨM <i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#">Bộ sưu tập vải polo</a>
+                                <a href="#">Bộ sưu tập vải thể thao</a>
+                                <a href="#">Bộ sưu tập vải polo sọc</a>
+                                <a href="#">Bộ sưu tập vải yoga</a>
+                                <a href="#">Bộ sưu tập vải jean</a>
+                                <a href="#">Bộ sưu tập vải áo khoác</a>
+                                <a href="#">Bộ sưu tập vải kaki</a>
+                                <a href="#">Bộ sưu tập vải đồ lót</a>
+                                <a href="#">Bộ sưu tập vải vest</a>
+                                <a href="#">Bộ sưu tập vải công nghệ</a>
+                            </div>
+                        </li>
+                        <li><a href="#">TIN TỨC</a></li>
+                        <li><a href="#">TUYỂN DỤNG</a></li>
+                        <li><a href="#">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menu-part-right">
+                <form action="" class="search">
+                    <input type="text" class="searchTerm" placeholder="Tìm kiếm nào!">
+                    <button type="submit" class="searchButton">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <div><img src="./image/icon/united-kingdom.png" alt=""></div>
+                <div><img src="./image/icon/china.png" alt=""></div>
+                <div><img src="./image/icon/vietnam.png" alt=""></div>
+            </div>
+        </div>
+        <div class="video-main-page">
+            <video autoplay loop muted plays-inline>
+                <source src="./video/明丰纺织宣传片（高清版）.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="about-us">
+            <div>
+                <h1>Giới Thiệu Về Chúng Tôi</h1>
+            </div>
+            <div style="width: 70%; margin: 0 auto;">
+                <p>Li liang là thương hiệu sợi vải bền vững đầu tiên của Việt Nam cung cấp giải pháp về nguồn nguyên
+                    liệu bền vững. Li liang chuyên nghiên cứu, tìm nguồn, và phân phối sợi vải thân thiện với môi
+                    trường. Sợi vải của Li liang bao gồm các loại sợi có nguồn gốc tự nhiên (như cây bông cotton, cây
+                    tre, bột gỗ,…) hay sợi tái chế (như vật liệu hậu tiêu dùng hoặc tiền tiều dùng). Các loại sợi chúng
+                    tôi ưu tiên chọn phân phối được sản xuất với dây chuyền hiện đại, chú trọng việc giảm rác thải và
+                    hạn chế dấu chân sinh học lên môi trường. Sứ mệnh của Li liang là trở thành một “trợ thủ đắc lực”,
+                    một đối tác đáng tin cậy giúp các doanh nghiệp dệt may Việt Nam phát triển một cách bền vững hơn. Từ
+                    đó, Li liang mong có thể đồng hành cùng các doanh nghiệp chung tay bảo vệ môi trường và bảo vệ sức
+                    khoẻ của người tiêu dùng tốt hơn.
+                </p>
+            </div>
+        </div>
+
+        <div class="swiper">
+            <h1>Danh Mục Nổi Bật</h1>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card-product">
+                        <div class="subacito">
+                            <img src="./image/DanhMucNoiBat/1.png" alt="">
+                        </div>
+                        <div><span>Áo Vest Nữ</span></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-product">
+                        <div class="subacito">
+                            <img src="./image/DanhMucNoiBat/2.png" alt="">
+                        </div>
+
+                        <div><span>Áo Polo Sọc</span></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-product">
+                        <div class="subacito">
+                            <img src="./image/DanhMucNoiBat/3.png" alt="">
+                        </div>
+                        <div><span>Đồ Yoga</span></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-product">
+                        <div class="subacito">
+                            <img src="./image/DanhMucNoiBat/4.png" alt="">
+                        </div>
+                        <div><span>Đồ Jean</span></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-product">
+                        <div class="subacito">
+                            <img src="./image/product/dolot.jpg" alt="">
+                        </div>
+
+                        <div><span>Đồ Lót</span></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-product">
+                        <div class="subacito">
+                            <img src="./image/product/dolot.jpg" alt="">
+                        </div>
+                        <div><span>Đồ Lót</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="san-Pham">
+            <div>
+                <h1>Sản Phẩm</h1>
+            </div>
+            <div style="width: 70%; margin: 0 auto;">
+                <p>Các dòng sản phẩm vải may hiện đang có mặt tại Li liang cũng như kiểu thời trang được xây dựng từ
+                    chất liệu vải của chúng tôi
+                </p>
+            </div>
+        </div>
+        <!-- BST POLO -->
+        <div class="BST-Polo">
+            <div class="polo-left">
+                <h1>BỘ SƯU TẬP VẢI POLO</h1>
+                <div>
+                    <p>
+                        Nylon 6 là một trong những loại nylon đơn nguyên quan trọng, thường được ứng dụng làm polyme tạo
+                        sợi và nhựa kỹ thuật. Sợi nylon 6 đôi khi được sử dụng để sản xuất vải, tuy nhiên ít phổ biến
+                        như sợi nylon 6-6. Độ bền của sợi nylon 6 có thể được cải thiện bằng cách kéo sợi nóng chảy và
+                        kéo sợi nóng. Khi so sánh với nylon 6-6, loại sợi này có độ bền va đập cao hơn.
+                    </p>
+                </div>
+                <div class="img-res"><img
+                        src="./image/product/vai-thun-100-cotton-pique_7a44b3d92186415a962714b8969f009c_grande.jpg"
+                        alt=""></div>
+                <div style="display: flex; width: 100%;">
+                    <div style="flex: 33%;"><img src="image/product/polo/1.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/polo/2.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/polo/3.png" alt=""></div>
+                </div>
+                <div style="display: flex; justify-content: right;"><button>XEM NGAY</button></div>
+            </div>
+            <div class="polo-right">
+                <img src="./image/product/vai-thun-100-cotton-pique_7a44b3d92186415a962714b8969f009c_grande.jpg" alt="">
+            </div>
+        </div>
+        <!-- BST Vai the thao -->
+        <div class="BST-Polo">
+            <div class="polo-right">
+                <img src="./image/product/vaithethao.jpg" alt="">
+            </div>
+            <div class="polo-left">
+                <h1>BỘ SƯU TẬP VẢI THỂ THAO</h1>
+                <div>
+                    <p>
+                        Nylon 6 là một trong những loại nylon đơn nguyên quan trọng, thường được ứng dụng làm polyme tạo
+                        sợi và nhựa kỹ thuật. Sợi nylon 6 đôi khi được sử dụng để sản xuất vải, tuy nhiên ít phổ biến
+                        như sợi nylon 6-6. Độ bền của sợi nylon 6 có thể được cải thiện bằng cách kéo sợi nóng chảy và
+                        kéo sợi nóng. Khi so sánh với nylon 6-6, loại sợi này có độ bền va đập cao hơn.
+                    </p>
+                </div>
+                <div class="img-res"><img src="./image/product/vaithethao.jpg" alt=""></div>
+                <div style="display: flex; width: 100%;">
+                    <div style="flex: 33%;"><img src="image/product/Sport/1.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/Sport/2.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/Sport/3.png" alt=""></div>
+                </div>
+                <div style="display: flex; justify-content: right;"><button>XEM NGAY</button></div>
+            </div>
+        </div>
+        <!-- BST vai polo soc -->
+        <div class="BST-Polo">
+            <div class="polo-left">
+                <h1>BỘ SƯU TẬP VẢI POLO SỌC</h1>
+                <div>
+                    <p>
+                        Nylon 6 là một trong những loại nylon đơn nguyên quan trọng, thường được ứng dụng làm polyme tạo
+                        sợi và nhựa kỹ thuật. Sợi nylon 6 đôi khi được sử dụng để sản xuất vải, tuy nhiên ít phổ biến
+                        như sợi nylon 6-6. Độ bền của sợi nylon 6 có thể được cải thiện bằng cách kéo sợi nóng chảy và
+                        kéo sợi nóng. Khi so sánh với nylon 6-6, loại sợi này có độ bền va đập cao hơn.
+                    </p>
+                </div>
+                <div class="img-res"><img src="./image/product/z3935039148742_619570d6931cefec169e6ab5899e7190.jpg"
+                        alt=""></div>
+                <div style="display: flex; width: 100%;">
+                    <div style="flex: 33%;"><img src="image/product/PoloSoc/1.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/PoloSoc/2.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/PoloSoc/3.png" alt="">
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: right;"><button>XEM NGAY</button></div>
+            </div>
+            <div class="polo-right">
+                <img src="./image/product/z3935039148742_619570d6931cefec169e6ab5899e7190.jpg" alt="">
+            </div>
+        </div>
+        <!-- BST vải yoga -->
+        <div class="BST-Polo">
+            <div class="polo-right">
+                <img src="./image/product/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2020__03__Polyester-biodegradable-colorful-fabric-6670f868d65948f59c83b2336d3350eb.png"
+                    alt="">
+            </div>
+            <div class="polo-left">
+                <h1>BỘ SƯU TẬP VẢI YOGA</h1>
+                <div>
+                    <p>
+                        Nylon 6 là một trong những loại nylon đơn nguyên quan trọng, thường được ứng dụng làm polyme tạo
+                        sợi và nhựa kỹ thuật. Sợi nylon 6 đôi khi được sử dụng để sản xuất vải, tuy nhiên ít phổ biến
+                        như sợi nylon 6-6. Độ bền của sợi nylon 6 có thể được cải thiện bằng cách kéo sợi nóng chảy và
+                        kéo sợi nóng. Khi so sánh với nylon 6-6, loại sợi này có độ bền va đập cao hơn.
+                    </p>
+                </div>
+                <div class="img-res"><img
+                        src="./image/product/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2020__03__Polyester-biodegradable-colorful-fabric-6670f868d65948f59c83b2336d3350eb.png"
+                        alt=""></div>
+                <div style="display: flex; width: 100%;">
+                    <div style="flex: 33%;"><img src="image/product/yoga/1.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/yoga/2.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/yoga/3.png" alt=""></div>
+                </div>
+                <div style="display: flex; justify-content: right;"><button>XEM NGAY</button></div>
+            </div>
+        </div>
+        <!-- BST jean -->
+        <div class="BST-Polo">
+            <div class="polo-left">
+                <h1>BỘ SƯU TẬP VẢI JEAN</h1>
+                <div>
+                    <p>
+                        Nylon 6 là một trong những loại nylon đơn nguyên quan trọng, thường được ứng dụng làm polyme tạo
+                        sợi và nhựa kỹ thuật. Sợi nylon 6 đôi khi được sử dụng để sản xuất vải, tuy nhiên ít phổ biến
+                        như sợi nylon 6-6. Độ bền của sợi nylon 6 có thể được cải thiện bằng cách kéo sợi nóng chảy và
+                        kéo sợi nóng. Khi so sánh với nylon 6-6, loại sợi này có độ bền va đập cao hơn.
+                    </p>
+                </div>
+                <div class="img-res"><img src="./image/product/vai-jean-1.jpg" alt=""></div>
+                <div style="display: flex; width: 100%;">
+                    <div style="flex: 33%;"><img src="image/product/jean/1.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/jean/2.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/jean/3.png" alt=""></div>
+                </div>
+                <div style="display: flex; justify-content: right;"><button>XEM NGAY</button></div>
+            </div>
+            <div class="polo-right">
+                <img src="./image/product/vai-jean-1.jpg" alt="">
+            </div>
+        </div>
+        <!-- BST vải áo khoác -->
+        <div class="BST-Polo">
+            <div class="polo-right">
+                <img src="./image/product/ao khoac/vai-may-ao-khoac-nylon-2.jpg" alt="">
+            </div>
+            <div class="polo-left">
+                <h1>BỘ SƯU TẬP VẢI ÁO KHOÁC</h1>
+                <div>
+                    <p>
+                        Nylon 6 là một trong những loại nylon đơn nguyên quan trọng, thường được ứng dụng làm polyme tạo
+                        sợi và nhựa kỹ thuật. Sợi nylon 6 đôi khi được sử dụng để sản xuất vải, tuy nhiên ít phổ biến
+                        như sợi nylon 6-6. Độ bền của sợi nylon 6 có thể được cải thiện bằng cách kéo sợi nóng chảy và
+                        kéo sợi nóng. Khi so sánh với nylon 6-6, loại sợi này có độ bền va đập cao hơn.
+                    </p>
+                </div>
+                <div class="img-res"><img src="./image/product/ao khoac/vai-may-ao-khoac-nylon-2.jpg" alt=""></div>
+                <div style="display: flex; width: 100%;">
+                    <div style="flex: 33%;"><img src="image/product/ao khoac/1.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/ao khoac/2.png" alt="">
+                    </div>
+                    <div style="flex: 33%;"><img src="image/product/ao khoac/3.png" alt=""></div>
+                </div>
+                <div style="display: flex; justify-content: right;"><button>XEM NGAY</button></div>
+            </div>
+        </div>
+        <!-- BST KAKI -->
+        <div class="BST-Polo">
+            <div class="polo-left">
+                <h1>BỘ SƯU TẬP VẢI KAKI</h1>
+                <div>
+                    <p>
+                        Nylon 6 là một trong những loại nylon đơn nguyên quan trọng, thường được ứng dụng làm polyme tạo
+                        sợi và nhựa kỹ thuật. Sợi nylon 6 đôi khi được sử dụng để sản xuất vải, tuy nhiên ít phổ biến
+                        như sợi nylon 6-6. Độ bền của sợi nylon 6 có thể được cải thiện bằng cách kéo sợi nóng chảy và
+                        kéo sợi nóng. Khi so sánh với nylon 6-6, loại sợi này có độ bền va đập cao hơn.
+                    </p>
+                </div>
+                <div class="img-res"><img src="./image/product/kaki/vaikaki(1)-845x500.jpg" alt=""></div>
+                <div style="display: flex; width: 100%;">
+                    <div style="flex: 33%;"><img src="image/product/kaki/1.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/kaki/2.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/kaki/3.png" alt=""></div>
+                </div>
+                <div style="display: flex; justify-content: right;"><button>XEM NGAY</button></div>
+            </div>
+            <div class="polo-right">
+                <img src="./image/product/kaki/vaikaki(1)-845x500.jpg" alt="">
+            </div>
+        </div>
+        <!-- BST do lot -->
+        <div class="BST-Polo">
+            <div class="polo-right">
+                <img src="./image/product/do lot/Do-lot-cao-cap-001 (1).png" alt="">
+            </div>
+            <div class="polo-left">
+                <h1>BỘ SƯU TẬP VẢI ĐỒ LÓT</h1>
+                <div>
+                    <p>
+                        Nylon 6 là một trong những loại nylon đơn nguyên quan trọng, thường được ứng dụng làm polyme tạo
+                        sợi và nhựa kỹ thuật. Sợi nylon 6 đôi khi được sử dụng để sản xuất vải, tuy nhiên ít phổ biến
+                        như sợi nylon 6-6. Độ bền của sợi nylon 6 có thể được cải thiện bằng cách kéo sợi nóng chảy và
+                        kéo sợi nóng. Khi so sánh với nylon 6-6, loại sợi này có độ bền va đập cao hơn.
+                    </p>
+                </div>
+                <div class="img-res"><img src="./image/product/do lot/Do-lot-cao-cap-001 (1).png" alt=""></div>
+                <div style="display: flex; width: 100%;">
+                    <div style="flex: 33%;"><img src="image/product/do lot/1.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/do lot/2.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/do lot/3.png" alt=""></div>
+                </div>
+                <div style="display: flex; justify-content: right;"><button>XEM NGAY</button></div>
+            </div>
+        </div>
+        <!-- BST vest -->
+        <div class="BST-Polo">
+            <div class="polo-left">
+                <h1>BỘ SƯU TẬP VẢI VEST</h1>
+                <div>
+                    <p>
+                        Nylon 6 là một trong những loại nylon đơn nguyên quan trọng, thường được ứng dụng làm polyme tạo
+                        sợi và nhựa kỹ thuật. Sợi nylon 6 đôi khi được sử dụng để sản xuất vải, tuy nhiên ít phổ biến
+                        như sợi nylon 6-6. Độ bền của sợi nylon 6 có thể được cải thiện bằng cách kéo sợi nóng chảy và
+                        kéo sợi nóng. Khi so sánh với nylon 6-6, loại sợi này có độ bền va đập cao hơn.
+                    </p>
+                </div>
+                <div class="img-res"><img src="./image/product/vest/vaivest.png" alt=""></div>
+                <div style="display: flex; width: 100%;">
+                    <div style="flex: 33%;"><img src="image/product/vest/1.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/vest/2.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/vest/3.png" alt=""></div>
+                </div>
+                <div style="display: flex; justify-content: right;"><button>XEM NGAY</button></div>
+            </div>
+            <div class="polo-right">
+                <img src="./image/product/vest/vaivest.png" alt="">
+            </div>
+        </div>
+
+        <!-- BST vai cong nghe -->
+        <div class="BST-Polo">
+            <div class="polo-right">
+                <img src="./image/product/vaiCN/vai-bo-poly-chong-tham-truot-nuoc.jpg" alt="">
+            </div>
+            <div class="polo-left">
+                <h1>BỘ SƯU TẬP VẢI ĐỒ LÓT</h1>
+                <div>
+                    <p>
+                        Nylon 6 là một trong những loại nylon đơn nguyên quan trọng, thường được ứng dụng làm polyme tạo
+                        sợi và nhựa kỹ thuật. Sợi nylon 6 đôi khi được sử dụng để sản xuất vải, tuy nhiên ít phổ biến
+                        như sợi nylon 6-6. Độ bền của sợi nylon 6 có thể được cải thiện bằng cách kéo sợi nóng chảy và
+                        kéo sợi nóng. Khi so sánh với nylon 6-6, loại sợi này có độ bền va đập cao hơn.
+                    </p>
+                </div>
+                <div class="img-res"><img src="./image/product/vaiCN/vai-bo-poly-chong-tham-truot-nuoc.jpg" alt="">
+                </div>
+                <div style="display: flex; width: 100%;">
+                    <div style="flex: 33%;"><img src="image/product/vaiCN/1.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/vaiCN/2.png" alt=""></div>
+                    <div style="flex: 33%;"><img src="image/product/vaiCN/3.png" alt=""></div>
+                </div>
+                <div style="display: flex; justify-content: right;"><button>XEM NGAY</button></div>
+            </div>
+        </div>
+
+        <div class="News">
+            <div class="title-news">
+                <div class="tinmoi "><span>TIN MỚI</span></div>
+                <div>
+                    <h1>TIN TỨC VỀ THỜI TRANG</h1>
+                </div>
+            </div>
+            <div class="news-content-container">
+                <div class="news-content">
+                    <img src="./image/news/1.png" alt="">
+                    <div class="news-infor">
+                        <div class="date">01/12/2022</div>
+                        <strong>5 món thời trang thu gọn vóc dáng, đáng sắm cho Tết</strong>
+                        <div class="more"><a href="#">Đọc thêm</a></div>
+                    </div>
+                </div>
+                <div class="news-content">
+                    <img src="./image/news/2.png" alt="">
+                    <div class="news-infor">
+                        <div class="date">01/12/2022</div>
+                        <strong>5 món thời trang thu gọn vóc dáng, đáng sắm cho Tết</strong>
+                        <div class="more"><a href="#">Đọc thêm</a></div>
+                    </div>
+                </div>
+                <div class="news-content">
+                    <img src="./image/news/3.png" alt="">
+                    <div class="news-infor">
+                        <div class="date">01/12/2022</div>
+                        <strong>10 cách diện váy họa tiết không lo sến</strong>
+                        <div class="more"><a href="#">Đọc thêm</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="gioi-thieu-ft">
+                <h1>Giới thiệu</h1>
+                <h2>CÔNG TY VẢI LI LIANG</h2>
+                <p>Số GPKD: 4118008503
+                    <br>Ngày cấp: 02/12/2020
+                    <br>Nơi cấp: Thành Phố Hồ Chí Minh
+                    <br>Địa chỉ trụ sở: Số 8 Phạm Phú Thứ,
+                    <br>Phường 11, Quận Tân Bình, Thành Phố Hồ Chí Minh
+                </p>
+            </div>
+            <div class="gioi-thieu-ft">
+                <h1>Thông tin liên hệ</h1>
+                <h2>Form liên hệ</h2>
+                <ul>
+                    <li><a href="#">Điện thoại: (012) 234 245 - (012) 234 245 - (012) 234 245</a></li>
+                    <li><a href="#">Giờ mở cửa: 08:00 - 18:00/a></li>
+                </ul>
+            </div>
+            <div class="gioi-thieu-ft">
+                <h1>Thông tin</h1>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="gioi-thieu-ft">
+                <h1 style="width: 247px;font-size: 1.49em">CÔNG TY VẢI LI LIANG</h1>
+                <div style="margin-top: 20%;"><img src="./image/footer/1.png" alt=""></div>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(".owl-prev span").html('<img class ="prev btnx" src="./image/next/Untitled.png" alt="" width="64px">');
+                $(".owl-next span").html('<img class ="next btnx" src="./image/next/Untitled.png" alt="" width="64px">');
+            });
+        </script>
+</body>
+
+<!-- <script src="./script/swiper.js"></script> -->
+<script src="./script/side-bar.js"></script>
+
+
+</html>

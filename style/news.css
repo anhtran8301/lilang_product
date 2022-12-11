@@ -1,0 +1,153 @@
+.container-news {
+    margin: 0 3%;
+}
+
+.tin-tuc-khac {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    /* identical to box height */
+    color: #000000;
+    padding: 25px 0;
+}
+
+.gioi-thieu-ft {
+    flex: 25%;
+    padding-left: 3%;
+}
+
+.title-pst h1 {
+    padding: 20px 0;
+    padding-bottom: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    /* or 133% */
+
+
+    color: #000000;
+}
+
+.title-pst span {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+    /* identical to box height, or 222% */
+
+
+    color: #000000;
+}
+
+.title-pst img {
+    /* max-width: 100%;
+    height: auto; */
+    width: 600px;
+    height: 360px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.title-pst p {
+    width: 80%;
+    padding: 20px 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+
+    text-align: justify;
+
+    color: #000000;
+
+}
+
+.item-news {
+    width: 100%
+}
+
+.item-news img {
+    max-width: 400px;
+    height: auto;
+}
+
+.item-news span {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 40px;
+    /* or 286% */
+
+
+    color: #276C9D;
+
+}
+
+.item-news h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+    width: 361px;
+
+    color: #000000;
+}
+
+.item-news p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 40px;
+    /* or 286% */
+
+    text-align: justify;
+    width: 356px;
+    color: #000000;
+}
+
+.date-news {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 40px;
+    /* identical to box height, or 286% */
+    max-width: 400px;
+    text-align: right;
+
+    color: #000000 !important;
+
+}
+.swiper {
+    padding-left: 0;
+}
+.gioi-thieu-ft{
+    padding-left: 0;
+}
+
+@media (max-width: 600px) {
+    .swiper {
+        font-size: 10px !important;
+    }
+
+    .title-pst p {
+        width: 100% !important;
+    }
+    .title-pst img{
+        width: 100%;
+        height: auto;
+    }
+}

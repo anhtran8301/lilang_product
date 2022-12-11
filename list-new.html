@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/svn-gotham" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/side-bar.css">
+    <link rel="stylesheet" href="./style/list-new.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<style>
+ 
+</style>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <form action="" class="search">
+            <input type="text" class="searchTerm" placeholder="Tìm kiếm nào!">
+            <button type="submit" class="searchButton">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <li><a href="#" style="color: #273773;">TRANG CHỦ</a></li>
+        <li><a href="#">GIỚI THIỆU </a></li>
+        <li>
+            <a href="#" class="" id="toggle" onclick="showMenu()">SẢN PHẨM <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="product-side-bar" id="third">
+                <a href="#">Bộ sưu tập vải polo</a>
+                <a href="#">Bộ sưu tập vải thể thao</a>
+                <a href="#">Bộ sưu tập vải polo sọc</a>
+                <a href="#">Bộ sưu tập vải yoga</a>
+                <a href="#">Bộ sưu tập vải jean</a>
+                <a href="#">Bộ sưu tập vải áo khoác</a>
+                <a href="#">Bộ sưu tập vải kaki</a>
+                <a href="#">Bộ sưu tập vải đồ lót</a>
+                <a href="#">Bộ sưu tập vải vest</a>
+                <a href="#">Bộ sưu tập vải công nghệ</a>
+            </div>
+        </li>
+        <li><a href="#">TIN TỨC</a></li>
+        <li><a href="#">TUYỂN DỤNG</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+    </div>
+    <div class="container">
+        <div class="contact_header">
+            <i class="fa-solid fa-phone"></i><span class="hotline">&nbsp;&nbsp;&nbsp;Hotline: </span><span
+                class="Phone-num">&nbsp;&nbsp;(012) 234 245
+                - (012) 234 245 -
+                (012) 234 245</span>
+        </div>
+        <div class="nav">
+
+            <div class="menu-part-left">
+                <div class="Icon-menu"><i class="fa-solid fa-bars" onclick="openNav()"></i></div>
+                <div class="logo">
+                    <img src="./image/Logo Liliang.png" alt="">
+                </div>
+                <div class="nav-element">
+                    <ul>
+                        <li><a href="#" style="color: #273773;">TRANG CHỦ</a></li>
+                        <li><a href="#">GIỚI THIỆU </a></li>
+                        <li class="dropdown" style=" position: relative;
+                        display: inline-block;">
+                            <a href="#" class="product-menu">SẢN PHẨM <i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#">Bộ sưu tập vải polo</a>
+                                <a href="#">Bộ sưu tập vải thể thao</a>
+                                <a href="#">Bộ sưu tập vải polo sọc</a>
+                                <a href="#">Bộ sưu tập vải yoga</a>
+                                <a href="#">Bộ sưu tập vải jean</a>
+                                <a href="#">Bộ sưu tập vải áo khoác</a>
+                                <a href="#">Bộ sưu tập vải kaki</a>
+                                <a href="#">Bộ sưu tập vải đồ lót</a>
+                                <a href="#">Bộ sưu tập vải vest</a>
+                                <a href="#">Bộ sưu tập vải công nghệ</a>
+                            </div>
+                        </li>
+                        <li><a href="#">TIN TỨC</a></li>
+                        <li><a href="#">TUYỂN DỤNG</a></li>
+                        <li><a href="#">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menu-part-right">
+                <form action="" class="search">
+                    <input type="text" class="searchTerm" placeholder="Tìm kiếm nào!">
+                    <button type="submit" class="searchButton">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <div><img src="./image/icon/united-kingdom.png" alt=""></div>
+                <div><img src="./image/icon/china.png" alt=""></div>
+                <div><img src="./image/icon/vietnam.png" alt=""></div>
+            </div>
+        </div>
+        <div class="container-marg">
+            <h1 style="font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 40px;
+            padding: 20px 0;
+            
+ color: #000000;">Tin Tức Mới Nhất</h1>
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <div class="tin-item">
+                        <div><img src="./image/list-new/1.png" alt=""></div>
+                        <div><span class="name-post">Tin tức Liang</span></div>
+                        <div><h1>STYLE GUIDE | CÁC QUÝ ÔNG SẼ DIỆN ĐỒ GÌ KHI THỜI TIẾT XUỐNG 14°C ?</h1></div>
+                        <div><p>Tháng 12 về, miền Bắc chính thức đón không khí lạnh khiến thời tiết chỉ còn dưới 14 độ. Mùa đông sang là lúc những items như áo khoác, suit, áo da,... lên ngôi.</p></div>
+                        <div class="date-item-news"><span>05/12/2022</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="tin-item">
+                        <div><img src="./image/list-new/2.png" alt=""></div>
+                        <div><span class="name-post">Tin tức Liang</span></div>
+                        <div><h1>ARISTINO RA MẮT BỘ SƯU TẬP ELEGANT MANIFESTO - TUYÊN NGÔN TAO NHÃ</h1></div>
+                        <div><p>Thời trang tưởng chừng như nghịch lý “càng ít thì càng nhiều”. Tuy nhiên đó lại là một trong</p></div>
+                        <div class="date-item-news"><span>05/12/2022</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="tin-item">
+                        <div><img src="./image/list-new/3.png" alt=""></div>
+                        <div><span class="name-post">Tin tức Liang</span></div>
+                        <div><h1>LI LIANG ƯU ĐÃI TỚI 50% TOÀN BỘ SẢN PHẨM</h1></div>
+                        <div><p>Lễ hội Sale lớn nhất năm chính thức diễn ra từ 22-27/11</p></div>
+                        <div class="date-item-news"><span>05/12/2022</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <div class="tin-item">
+                        <div><img src="./image/list-new/4.png" alt=""></div>
+                        <div><span class="name-post">Tin tức Liang</span></div>
+                        <div><h1>CHÍNH SÁCH BẢO HÀNH ĐỒ DA LÊN ĐẾN 12 THÁNG</h1></div>
+                        <div><p>Để đồ da luôn bền đẹp, chăm sóc đúng cách là việc cần thiết. Thay lời cảm ơn khách hàng đã lựa</p></div>
+                        <div class="date-item-news"><span>05/12/2022</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="tin-item">
+                        <div><img src="./image/list-new/5.png" alt=""></div>
+                        <div><span class="name-post">Tin tức Liang</span></div>
+                        <div><h1>CHÀO ĐÓN CHUỖI SHOWROOM LI LIANG TẠI HÀ NỘI</h1></div>
+                        <div><p>Đánh dấu bước phát triển mạnh mẽ trên hành trình chinh phục khách hàng, Aristino chính thức</p></div>
+                        <div class="date-item-news"><span>05/12/2022</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="tin-item">
+                        <div><img src="./image/list-new/6.png" alt=""></div>
+                        <div><span class="name-post">Tin tức Liang</span></div>
+                        <div><h1>LI LIANG | X2 ĐIỂM TIÊU DÙNG THỨ 4 HÀNG TUẦN</h1></div>
+                        <div><p>Thay lời cảm ơn đến khách hàng đã tin tưởng và lựa chọn thương hiệu suốt thời gian qua, đồng thời</p></div>
+                        <div class="date-item-news"><span>05/12/2022</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="page-number">
+                <div class="page-item selected">1</div>
+                <div class="page-item">2</div>
+                <div class="page-item">3</div>
+                <div class="page-item">...</div>
+                <div class="page-item">Trang tiếp theo</div>
+                <div class="page-item">Trang cuối</div>
+            </div>
+        </div>
+        
+
+        <footer>
+            <div class="gioi-thieu-ft">
+                <h1>Giới thiệu</h1>
+                <h2>CÔNG TY VẢI LI LIANG</h2>
+                <p>Số GPKD: 4118008503
+                    <br>Ngày cấp: 02/12/2020
+                    <br>Nơi cấp: Thành Phố Hồ Chí Minh
+                    <br>Địa chỉ trụ sở: Số 8 Phạm Phú Thứ,
+                    <br>Phường 11, Quận Tân Bình, Thành Phố Hồ Chí Minh
+                </p>
+            </div>
+            <div class="gioi-thieu-ft">
+                <h1>Thông tin liên hệ</h1>
+                <h2>Form liên hệ</h2>
+                <ul>
+                    <li><a href="#">Điện thoại: (012) 234 245 - (012) 234 245 - (012) 234 245</a></li>
+                    <li><a href="#">Giờ mở cửa: 08:00 - 18:00/a></li>
+                </ul>
+            </div>
+            <div class="gioi-thieu-ft">
+                <h1>Thông tin</h1>
+                 <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="gioi-thieu-ft">
+                <h1 style="width: 247px;font-size: 1.49em">CÔNG TY VẢI LI LIANG</h1>
+                <div style="margin-top: 20%;"><img src="./image/footer/1.png" alt=""></div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script src="./script/swiper.js"></script>
+<script src="./script/side-bar.js"></script>
+
+
+</html>

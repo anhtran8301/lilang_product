@@ -1,0 +1,183 @@
+.container-marg {
+    margin-left: 40px;
+}
+
+.tin-hot-title {
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.tin-item-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.tin-item {
+    cursor: pointer;
+    background: white;
+    margin-top: 30px;
+    /* margin-right: 4%; */
+    margin-bottom: 2%;
+    padding: 20px 15px;
+    height: 100%;
+}
+
+.tin-item:hover {
+    transform: scale(110%);
+    transition: all 0.5s;
+}
+
+.tin-item img {
+    /* width: 400px; */
+    /* width: 90%;
+    height: 240px; */
+    width: 400px;
+    height: 240px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.name-post {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 40px;
+    /* or 286% */
+    color: #276C9D;
+}
+
+.tin-item h1 {
+    height: 80px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+    color: #000000;
+}
+
+.tin-item p {
+    height: 120px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 40px;
+    /* or 286% */
+    text-align: justify;
+    color: #000000;
+}
+
+.date-item-news {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 40px;
+    /* identical to box height, or 286% */
+    text-align: right;
+    color: #000000;
+
+}
+
+.page-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-item {
+    padding: 12px 15px;
+    margin: 1%;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+    text-align: justify;
+    letter-spacing: 0.1em;
+    color: #000000;
+    cursor: pointer;
+
+}
+.selected{
+    border: 1px solid black;
+    background: black;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+
+    .tin-item p,
+    .tin-item h1 {
+        width: 300px;
+    }
+
+    .tin-item img {
+        width: 100%;
+    }
+
+    .tin-item-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-item{
+        font-size: 10px;
+    }
+    .tin-item h1{
+        width: auto;
+        height: auto;
+    }
+}
+
+/* updated */
+   /* Float four columns side by side */
+   .column {
+    float: left;
+    width: 401px;
+    padding: 0 10px;
+    margin: 0 6%;
+    margin-left: 0;
+
+  }
+  .row{
+      width: 100%;
+  }
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    /* padding: 16px; */
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  .card img{
+      width: 100%;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-left: 0;
+      margin-bottom: 20px;
+      
+    }
+  }
